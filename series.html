@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto HobbList</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</head>
+<body class="d-flex flex-column h-100 bg-light" style="background-image: url(/img/2150172450.jpg); background-repeat: no-repeat; background-size: cover;" data-bs-theme="light">
+    <header class="d-flex flex-wrap p-3 bg-primary">
+      <a href="index.html" class="col-3" style="outline: 0;"><img src="./img/logo.png" alt="Logo" width="100" height="100" style="margin-left: 40px;"></a>
+      <div class="col-6 text-center">
+        <h1 class="inika-regular text-dark">HobbList</h1>
+        <h3 class="inika-regular text-dark">Pon orden a tu caos</h3>
+      </div>
+      
+      <div class="col-3 text-end">
+        <input type="button" class="abeezee-regular btn btn-secondary" data-bs-toggle="modal" data-bs-target="#login" value="Login" id="btn-login" style="width: 85px; height: 50px; margin-top: 28px; border-radius: 15px; color:	rgba(1, 22, 39, 0.65); font-size: 20px;">
+        <input type="button" class="abeezee-regular btn btn-secondary" data-bs-toggle="modal" data-bs-target="#sign-up" value="Sign up" id="btn-sign-up" style="width: 95px; height: 50px; margin-top: 28px; border-radius: 15px; color:rgba(1, 22, 39, 0.65); font-size: 20px;">
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+              <div class="container-fluid justify-content-center">
+                <button class="navbar-toggler icon-burguer" style="width: 41px; height: 41px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"></button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item" style="margin-right: 5%;">
+                      <a class="inika-regular nav-link" href="movies.html" style="font-size: 20px;">Peliculas</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 2.5%;">
+                      <a class="inika-regular nav-link active" href="series.html" style="font-size: 20px;">Series</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 2.5%;">
+                      <a class="inika-regular nav-link " href="videogames.html" style="font-size: 20px;">Videojuegos</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 5%;">
+                      <a class="inika-regular nav-link " href="books.html" style="font-size: 20px;">Libros</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    </nav>
+    <main class="align-items-center">
+      <div class="bg-primary border rounded border-4 border-secondary p-5 mx-auto mt-4" id="bienvenida" style="width: 80%; min-height: 80%;" >
+        <h2 class="inika-regular text-center" style="font-size: 64px;">¡Bienvenido a HobbList!</h2>
+        <p class="inika-regular text-center" style="font-size: 32px;">En HobbList podras organizar todo ese entretenimiento que 
+          tienes pendiente o que quieres guardar para poder recomendarlo... o no...</p>
+        <div>
+          <div class="inika-regular flex-grow-1 ms-3 text-center" style="font-size: 32px; margin-bottom: 4rem;"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla bibendum, congue metus ut, 
+            dapibus erat. Donec at leo viverra, condimentum tellus id, luctus dolor. Proin non nisl mollis, auctor 
+            lectus nec, varius lorem. Donec tincidunt lectus nisi, et porttitor felis consequat nec. Sed ut cursus 
+            velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div> 
+          <div class="d-flex justify-content-center">
+            <div class="card text-center flex-column mx-5 bg-secondary" id="card-movie" style="width: 18rem; border: none;">
+              <img src="/img/movies.jpg" alt="Peliculas" style="border-radius: 5px 5px 0 0; height: 10rem;">
+              <div class="card-body">
+                <h2 class="card-title inika-regular">Peliculas</h2>
+                <p class="card-text inika-regular" id="card-movie-p">Aquí podrás organizar y puntuar tus películas favoritas y no tan favoritas...</p>
+                <a href="movies.html" class="btn btn-primary inika-regular">¡Comienza!</a>
+              </div>
+            </div>
+            <div class="card text-center flex-column mx-5 bg-secondary" id="card-serie" style="width: 18rem; border: none;">
+              <img src="/img/series.jpg" alt="Series" style="border-radius: 5px 5px 0 0; height: 10rem;">
+              <div class="card-body">
+                <h2 class="card-title inika-regular">Series</h2>
+                <p class="card-text inika-regular" id="card-serie-p">Ten a mano esas series que te recomiendan y nunca te veras, pero al menos has hecho el esfuerzo.</p>
+                <a href="series.html" class="btn btn-primary inika-regular">¡Comienza!</a>
+              </div>
+            </div>
+            <div class="card text-center flex-column mx-5 bg-secondary" id="card-videogame" style="width: 18rem; border: none;">
+              <img src="/img/videogames.jpg" alt="Videogames" style="border-radius: 5px 5px 0 0; height: 10rem;">
+              <div class="card-body">
+                <h2 class="card-title inika-regular">Videojuegos</h2>
+                <p class="card-text inika-regular" id="card-videogame-p">Haz tu lista de todo aquello hayas jugado para saber que criticar o no redes después.</p>
+                <a href="videogames.html" class="btn btn-primary inika-regular">¡Comienza!</a>
+              </div>
+            </div>
+            <div class="card text-center flex-column mx-5 bg-secondary" id="card-book" style="width: 18rem; border: none;">
+              <img src="/img/books.jpg" alt="Books" style="border-radius: 5px 5px 0 0; height: 10rem;">
+              <div class="card-body">
+                <h2 class="card-title inika-regular">Libros</h2>
+                <p class="card-text inika-regular" id="card-book-p">Añade tus universos favoritos y busca nuevos donde adentrarte.</p>
+                <a href="/books.html" class="btn btn-primary inika-regular">¡Comienza!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modales-->
+      <div class="modal fade" id="mail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-primary" id="card-mail">
+            <div class="modal-header">
+              <h5 class="modal-title abeezee-bold">Contacte con nosotros</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="d-flex flex-column" action="" method="POST" >
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input class="form-control"  type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div data-mdb-input-init class="form-outline mb-4">
+                <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" >
+                </div>
+                <div data-mdb-input-init class="form-outline mb-4">
+                <input class="form-control"  type="text" name="asunto" id="asunto" placeholder="Asunto" >
+                </div>
+                <div data-mdb-input-init class="form-outline mb-4">
+                <textarea class="form-control"  name="comentario" id="comentario" placeholder="Comentario" cols="30" rows="5" ></textarea>
+                </div>
+                <button type="submit" class="btn btn-light" style="width: 25%; align-self: flex-end; cursor: pointer;">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-primary" id="card-login">
+          <div class="modal-header">
+            <h5 class="modal-title abeezee-bold text-center col-11 text-center" style="font-size: 25px;">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" placeholder="Email address">
+              </div>
+            
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" placeholder="Password">
+              </div>
+            
+              <!-- 2 column grid layout for inline styling -->
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input bg-secondary border-black" type="checkbox" value="" id="form2Example31" checked />
+                    <label class="form-check-label" for="form2Example31"> Recuerdame </label>
+                  </div>
+                </div>
+            
+                <div class="col">
+                  <!-- Simple link -->
+                  <a href="#!" class="text-light">¿No recuerdas la contraseña?</a>
+                </div>
+              </div>
+            
+              <!-- Submit button -->
+              <button id="btn-card-login" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary btn-block mb-4" style="width: 100% ;">Login</button>
+            
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>¿Aún no tienes cuenta? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#sign-up" class="text-light">Registrate</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sign-up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-primary" id="card-sign-up">
+          <div class="modal-header">
+            <h5 class="modal-title abeezee-bold col-11 text-center" style="font-size: 25px;">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" class="form-control" placeholder="Email address">
+              </div>
+            
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" class="form-control" placeholder="Repeat password">
+              </div>
+
+              <!-- 2 column grid layout for inline styling -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2 bg-secondary border-black" type="checkbox" value="" id="registerCheck" checked
+                  aria-describedby="registerCheckHelpText" />
+                <label class="form-check-label" for="registerCheck">
+                  I have read and agree to the terms
+                </label>
+              </div>
+            
+              <!-- Submit button -->
+              <button id="btn-card-sign-up" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary btn-block mb-4" style="width: 100% ;">Sign Up</button>
+
+              <div class="text-center">
+                <p>Si ya tienes cuenta, <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#login" class="text-light">inicia sesión</a> </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="footer mt-auto p-3 bg-primary fixed-bottom">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-start">
+          <input onclick="cambiarTema()"  type="button" class="btn btn-secondary icon-night-mode" id="btn-modo" style="width: 41px; height: 41px; border-radius: 15px;">
+          <div class="abeezee-regular flex-grow-1 align-self-center ms-3" id="modo" style="font-size: 16px;">Modo oscuro</div>
+        </div>
+        <div class="abeezee-regular d-flex align-items-center">
+          Copyright © 2024 Alfonso Mantas
+        </div>
+        <div class="d-flex align-items-end">
+          <input type="button" id="btn-mail" class="btn btn-secondary icon-mail" data-bs-toggle="modal" data-bs-target="#mail" style="width: 41px; height: 41px; border-radius: 15px; margin-right: 5px;">
+          <a href="https://twitter.com"><input type="url" id="twitter" class="btn btn-secondary icon-tw" style="width: 41px; height: 41px; border-radius: 15px; margin-right: 5px"></a>
+          <a href="https://instagram.com"><input type="url" id="insta" class="btn btn-secondary icon-ig" style="width: 41px; height: 41px; border-radius: 15px; margin-right: 5px"></a>
+          <a href="https://facebook.com"><input type="url" id="facebook" class="btn btn-secondary icon-fb" style="width: 41px; height: 41px; border-radius: 15px; margin-right: 5px"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
